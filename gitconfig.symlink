@@ -1,0 +1,10 @@
+[user]
+	name = Brandon McAllister
+	email = brandon@insomniacisland.com
+[core]
+	editor = vim
+	pager = 
+[help]
+	autocorrect = 1
+[color]
+	ui = true

@@ -1,0 +1,2 @@
+# don't ring bell on tab-complete because it's damn annoying
+set bell-style visible

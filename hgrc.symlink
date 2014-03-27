@@ -1,0 +1,15 @@
+[ui]
+username = Brandon McAllister <brandon@insomniacisland.com>
+ssh = ssh -C
+editor = vim
+
+[extensions]
+graphlog=
+color=
+pager=
+progress=
+shelve= 
+
+[pager]
+pager = LESS='FSRX' less
+
