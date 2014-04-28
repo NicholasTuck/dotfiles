@@ -1,2 +1,2 @@
-# don't ring bell on tab-complete because it's damn annoying
+# don't ring bell on tab-complete because it's annoying
 set bell-style visible
