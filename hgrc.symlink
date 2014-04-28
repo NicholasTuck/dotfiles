@@ -1,15 +1,36 @@
+[paths]
+2526 = https://custom.path/to/repo/
+
+
+[web]
+push_ssl = false
+allow_push = *
+
+[extdiff]
+cmd.diffmerge = C:\tools\DiffMerge_3_3_0_18513\DiffMerge.exe
+
 [ui]
 username = Nicholas Tuck <nick@nicholastuck.com>
+merge = diffmerge
+interactive = true
 ssh = ssh -C
-editor = vim
+
+[merge-tools]
+diffmerge.premerge = True
+diffmerge.args = --result=$output -t1="Local Version" -t2=$output -t3="Other Version" --caption=$output  $local $base $other
+diffmerge.binary = False
+diffmerge.gui = True
+diffmerge.executable = C:\tools\DiffMerge_3_3_0_18513\DiffMerge.exe
+diffmerge.symlinks = False
 
 [extensions]
-graphlog=
-color=
-pager=
+color = 
+hgext.purge = 
+hgext.graphlog = 
+hgext.extdiff = 
+hgk = 
+hgext.mq = 
+hgext.convert = 
+fetch = 
 progress=
 shelve= 
-
-[pager]
-pager = LESS='FSRX' less
-
