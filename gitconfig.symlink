@@ -14,4 +14,14 @@
 [alias]
 	st = status -s
 	forget = rm --cached 
-	glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+	gitk = !gitk --all
+	serve = daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
+
+# colors and options http://stackoverflow.com/questions/15458237/git-pretty-format-colors
+
+	glogOriginal = log --graph --pretty=format:'%Cred%h%Creset -%C(bold yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+	glog = log --graph --pretty=format:'%C(red bold) %h %Creset -%C(bold yellow)%d%Creset %s  %C(green)(%cr)%Creset | %C(cyan bold)[%cn]%Creset' --abbrev-commit
+
+	glogdate = log --graph --pretty=format:'%C(red bold) %h %Creset -%C(bold yellow)%d%Creset %s  %C(green)(%ci)%Creset | %C(cyan bold)[%cn]%Creset' --abbrev-commit
