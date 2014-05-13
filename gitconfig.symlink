@@ -14,6 +14,7 @@
 [alias]
 	st = status -s
 	forget = rm --cached 
+	aviturename = config user.name \"Nick Tuck\"
 
 	gitk = !gitk --all
 	serve = daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
