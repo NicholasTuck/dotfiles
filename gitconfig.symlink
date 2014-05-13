@@ -4,7 +4,8 @@
 [core]
 	editor = vim
 	pager = 
-	autocrlf = true
+	autocrlf = true  #windows
+#	autocrlf = input  #linux
 [help]
 	autocorrect = 1
 [color]
