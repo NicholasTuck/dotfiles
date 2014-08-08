@@ -15,7 +15,7 @@
 [alias]
 	st = status -s
 	forget = rm --cached 
-	aviturename = config user.name \"Nick Tuck\"
+	aviturename = "!f(){ git config user.email \"nick.tuck@aviture.us.com\" && git config user.name \"Nick Tuck\";};f"
 
 	gitk = !gitk --all
 	serve = daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
